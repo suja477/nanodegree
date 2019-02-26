@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.suja.mypopularmovies.MainActivity">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/detail_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/detail_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="@dimen/detail_margin"
+                    android:paddingTop="@dimen/detail_margin"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/detail_poster"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@android:drawable/alert_light_frame"
+                    android:contentDescription="@string/movie_poster" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/detail_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detail_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/detail_margin"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/date_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_vote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/detail_margin"
+                        android:textColor="@color/colorTextDark"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/favourite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                         />
+                    <TextView
+                        android:id="@+id/hint_fav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_favourite"
+                        android:textColor="@color/colorTextDark"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detail_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/detail_margin"
+                    android:textColor="@color/colorTextDark" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/detail_trailer"
+                    android:textStyle="bold"
+                    android:text="@string/trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/detail_margin"
+                    android:textColor="@color/colorTextDark" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/detail_linear_layout"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+            <fragment
+                android:id="@+id/trailer_recycler_view_fragment"
+                android:name="com.suja.mypopularmovies.TrailerFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_linear_layout"
+                tools:layout="@layout/trailer_recycler_view_fragment" />
+
+            <TextView
+                android:id="@+id/detail_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/detail_margin"
+                android:textColor="@color/colorTextDark"/>
+
+            <fragment
+                android:id="@+id/review_recycler_view_fragment"
+                android:name="com.suja.mypopularmovies.ReviewFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trailer_recycler_view_fragment"
+                tools:layout="@layout/review_recycler_view_fragment" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>
+
+

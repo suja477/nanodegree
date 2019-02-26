@@ -1,0 +1,50 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+
+    }
+    dependencies {
+        classpath 'com.google.guava:guava:22.0'
+        classpath 'com.android.tools.build:gradle:3.1.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+/*
+
+    gradle tasks for testing -- Help from online forums
+  *//*
+task runAppEngine (dependsOn: ":backend:appengineRun") {
+    project(":backend").afterEvaluate { backend ->
+        backend.extensions.appengine.daemon = true
+    }
+    doLast {
+        println "started the server!"
+    }
+}*/
+
+
+    task startServer (dependsOn: "backend:appengineStart") {}
+    task testPaid (dependsOn: "app:connectedAndroidTest") {}
+    task stopServer (dependsOn: "backend:appengineStop") {}
+    task GCEtesting {
+        dependsOn = ["testPaid"]
+        group = 'custom'
+        description 'Starts GCE server, runs tests and stops server.'
+
+    dependsOn startServer // Ensure appengineStart is run at some point before this task
+    finalizedBy stopServer // Ensure appengineStop is run at some point after this task
+}
+
+

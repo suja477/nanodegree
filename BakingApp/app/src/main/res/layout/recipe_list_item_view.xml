@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="@style/MyListAppearance"
+    android:layout_margin="4dp">
+    <ImageView
+        android:src="@drawable/recipe_logo"
+        android:id="@+id/recipe_image"
+        android:layout_weight="3"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/recipe_list_item"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="100dp"
+        android:layout_weight="5"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+
+        android:textSize="20dp"
+        android:padding="8dp"
+        />
+    <TextView
+        android:id="@+id/serving_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:gravity="end"
+        android:padding="8dp"
+        />
+</LinearLayout>

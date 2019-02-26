@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#4527a0</color>
+    <color name="colorTextDark">#000000</color>
+    <color name="colorWhite">#fffefc</color>
+    <!-- the activated state color for a forecast list item -->
+</resources>

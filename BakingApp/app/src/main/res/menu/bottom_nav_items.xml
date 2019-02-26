@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_prev"
+        android:title="@string/menu_home"
+
+        />
+
+
+    <item
+        android:id="@+id/menu_next"
+        android:title="@string/menu_next"
+         />
+</menu>

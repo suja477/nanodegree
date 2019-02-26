@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="detail_margin">8dp</dimen>
+    <dimen name="title_size">40sp</dimen>
+    <dimen name="date_size">20sp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Nov 28 17:53:06 IST 2018
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\Suja Manu\\androidtermII\\ShoppingCalculator\\app\\build\\intermediates\\assets\\debug
+0.path=initialValues.json
+0.set=ASSET
+count=1

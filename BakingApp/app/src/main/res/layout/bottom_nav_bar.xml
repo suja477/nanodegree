@@ -1,0 +1,8 @@
+<android.support.design.widget.BottomNavigationView
+    android:id="@+id/navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    design:menu="@menu/bottom_nav_items"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto" />

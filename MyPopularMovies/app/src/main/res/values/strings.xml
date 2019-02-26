@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="error">Nothing To Display</string>
+    <string name="title_activity_movie_detail">MovieDetail</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="no_network">No Internet Connection</string>
+    <string name="out_of_ten">/10</string>
+    <string name="favourite">Favourite</string>
+    <string name="hint_favourite">Add as Favourite</string>
+    <string name="review">Reviews :</string>
+    <string name="trailer">Trailers:</string>
+    <string name="review_menu">Show Review</string>
+    <string name="trailer_menu">Show Trailer</string>
+
+</resources>

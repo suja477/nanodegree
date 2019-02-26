@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BakingApp</string>
+    <string name="sample_list_load_error">"No JSON list"</string>
+    <string name="error_no_json">"no json found"</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps">Steps</string>
+    <string name="title_activity_recipe_video">RecipeVideoActivity</string>
+    <string name="appwidget_text">Baking Recipes</string>
+    <string name="add_widget">Add widget</string>
+    <string name="empty_view_text">No recipe</string>
+    <string name="menu_next">Next Step</string>
+    <string name="menu_home">Previous Step</string>
+    <string name="error_no_video">No video to display</string>
+    <string name="error_no">No recipes found</string>
+    <string name="error_recipe">No recipes found</string>
+    <string name="refresh">Refresh</string>
+    <string name="no_ingredient">No Ingredient Info</string>
+    <string name="no_network">No internet</string>
+    <string name="net_error">Network Error..Refresh not possible</string>
+
+</resources>

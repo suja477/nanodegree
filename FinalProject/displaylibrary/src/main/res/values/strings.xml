@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DisplayLibrary</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="NoJoke">No Jokes to Display</string>
+    <string name="JOKE_INTENT_KEY">JOKE_INTENT_KEY</string>
+
+
+</resources>
