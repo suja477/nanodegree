@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suja.shoppingcalculator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.suja.shoppingcalculator.view.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.suja.shoppingcalculator.model.ShoppingItemContentProvider"
+            android:authorities="com.suja.shoppingcalculator.shopping"
+            android:exported="false" />
+        <provider
+            android:name="com.suja.shoppingcalculator.model.HistoryContentProvider"
+            android:authorities="com.suja.shoppingcalculator.history"
+            android:exported="false" />
+
+        <activity
+            android:name="com.suja.shoppingcalculator.view.DetailActivity"
+            android:label="@string/title_activity_detail" />
+
+        <receiver android:name="com.suja.shoppingcalculator.ShoppingWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/shopping_widget_info" />
+        </receiver>
+
+        <service
+            android:name="com.suja.shoppingcalculator.controller.WidgetListViewService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <service android:name="com.suja.shoppingcalculator.controller.UpdateWidgetService" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.suja.shoppingcalculator.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

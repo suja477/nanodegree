@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Suja Manu\androidtermII\ShoppingCalculator\app\src\main\assets"><file name="initialValues.json" path="C:\Users\Suja Manu\androidtermII\ShoppingCalculator\app\src\main\assets\initialValues.json"/></source><source path="C:\Users\Suja Manu\androidtermII\ShoppingCalculator\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\Suja Manu\androidtermII\ShoppingCalculator\app\src\debug\assets"/></dataSet></merger>

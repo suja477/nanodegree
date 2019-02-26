@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShoppingCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="spinner_title">Click to add items</string>
+    <string name="content_add_veg">Click to add vegetable</string>
+    <string name="total">Total Bill</string>
+</resources>
